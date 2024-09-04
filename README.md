@@ -14,7 +14,7 @@
 - [Project Overview](#project-overview)
 - [Features](#features)
 - [Model Architecture](#model-architecture)
-- [Data Preprocessing](#data-preprocessing)
+- [Data Interpretation and Preprocessing](#data-interpretation-and-preprocessing)
 - [Training the Model](#training-the-model)
 - [Results](#results)
 - [Installation](#installation)
@@ -24,6 +24,8 @@
 
 ## Introduction
 This project is a sentiment analysis model applied to tweets. It uses machine learning and natural language processing (NLP) techniques to classify the sentiment of tweets into three categories: positive, negative, and neutral. The project demonstrates the use of various preprocessing steps, TF-IDF vectorization, and a deep learning model built with TensorFlow and Keras.
+
+![](https://github.com/Vidit-Kushwaha/Tweet-Sentimental-Analysis/blob/main/assets/banner.png)
 
 ## Project Overview
 Sentiment analysis is a key aspect of NLP that involves determining the sentiment expressed in a piece of text. This project leverages the power of deep learning and TF-IDF vectorization to perform sentiment analysis on a dataset of tweets.
@@ -45,7 +47,12 @@ The model used in this project is a sequential neural network with the following
 - **Dropout Layer**: 0.3 dropout rate
 - **Output Layer**: 3 units with softmax activation for multiclass classification
 
-## Data Preprocessing
+## Data Interpretation and Preprocessing
+
+We have an image depicting a dataframe and a list of features. We will utilize the 'text' feature as input and consider the 'sentiment' feature as our target variable. Our goal is to predict the likelihood of a text being categorized as positive, negative, or neutral.
+
+![](https://github.com/Vidit-Kushwaha/Tweet-Sentimental-Analysis/blob/main/assets/Input%20Data.jpg)
+
 The data preprocessing pipeline includes:
 
 - **Lowercasing**: Convert all text to lowercase.
